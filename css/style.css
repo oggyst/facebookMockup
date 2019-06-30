@@ -1,0 +1,364 @@
+* 
+{
+    background-color: gray;
+}
+
+body 
+{
+    margin: 0px;
+}
+
+.header 
+{
+    height: 32px;
+    background-color: #0174ad;
+    width: 100vw;
+}
+
+.fa-facebook-square 
+{
+    padding-left: 12%;
+}
+
+.fas 
+{
+    background-color: white;
+}
+
+.input 
+{
+    height: 60%;
+    margin-left: 1vw;
+    width: 35vw;
+    float: left;
+    margin-top: 0.2em;
+    background-color: white;
+}
+
+.searchButton
+{
+    float: left;
+    margin-top: 0.2em;
+    height: 26px;
+    width: 28px;
+    background-color: white;
+}
+
+.fab 
+{
+    margin-left: 3%;
+    float: left;
+    margin-top: 0.5%;
+    background-color: #0174ad;
+}
+
+header p 
+{
+    float: left;
+    margin-top: 0.5%;
+    height: 60%;
+    background-color: #0174ad;
+}
+
+.headerLine 
+{
+    border-left: 1px solid black;
+    height: 80%;
+    float: left;
+    margin: 0.2% 1% 0.2% 1%;
+}
+
+.iconsHeader 
+{
+    margin-top: 0.5%;
+    margin-left: 0.5%;
+    float: left;
+    background-color: #0174ad;
+}
+
+.container
+{
+    margin-top: 15px;
+    height: 97vh;
+    width: 100vw;
+}
+
+.aboutPage
+{
+    padding-bottom: 15px;
+}
+
+.cover
+{
+    margin-left: 15%;
+    border: black 1px solid;
+    height: 40%;
+    width: 70%;
+    background-color: #0174ad;
+    z-index: 1;
+}
+
+.likeButton 
+{
+    height: 32px;
+    width: 100px;
+    background-color: gray;
+    z-index: 1;
+    position: relative;
+    float: left;
+    margin-left: 15%;
+    margin-top: 50px;
+}
+
+.profilePhoto
+{
+    z-index: 2;
+    background-color: #0174ad;
+    border: black 1px solid;
+    height: 150px;
+    width: 150px;
+    margin-top: 18%;
+    margin-left: 7%;
+    position: relative;
+}
+
+.trStyle
+{
+    background-color: white;
+}
+
+.arrowDown 
+{
+    background-color: white;
+}
+
+.ChosseBar
+{
+    margin-left: 15%;
+    height: 10%;
+    width: 70%;
+    z-index: -1;
+    background-color: white;
+    border: none;
+    border-bottom: 2px gray solid;
+}
+
+.Chosse
+{
+    float: left;
+    margin-left: 2em;
+    font-size: 25px;
+    height: 73%;
+    width: 8%;
+    text-align: center;
+    margin-top: 2%;
+    background-color: transparent;
+    border-bottom: none;
+}
+
+.timeline
+{
+    margin-left: 25%;
+    border-bottom: 2px blue solid;
+}
+
+.left 
+{
+    margin-right: 2%;
+    margin-left: 15%;
+    width: 20vw;
+    float: left;
+    margin-top: 1vw;
+    background-color: white;
+}
+
+.border 
+{
+    background-color: gray;
+    height: 15px;
+    width: 100%;
+    float: left;
+}
+
+.right 
+{
+    width: 48vw;
+    float: left;
+    margin-top: 1vw;
+    background-color: white;
+}
+
+.blueText 
+{
+    color: blue;
+    background-color: white;
+}
+
+td
+{
+    border-bottom: solid 1px rgb(138, 138, 138);
+    background-color: white;
+}
+
+.info 
+{
+    float: left;
+    width: 100%;
+    background-color: white;
+}
+
+.rectangle 
+{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 40%;
+    background-color: #0174ad;
+    float: left;
+    vertical-align: middle;
+}
+
+.rectangle::before
+{
+    content: "";
+    display: block;
+    padding-top: 50%;
+}
+
+.apps 
+{
+    padding-left: 5px;
+    border-bottom: black;
+    width: 100%;
+    float: left;
+    vertical-align: middle;
+    background-color: white;
+}
+
+.headings 
+{
+    background-color: white;
+    text-align: left;
+}
+
+.apps p 
+{
+    margin-top: calc(100% / 12);
+    margin-left: calc(40% + 10px);
+}
+
+.appsHolder 
+{
+    float: left;
+    width: 100%;
+    z-index: 1;
+}
+
+.photos 
+{
+    text-align: center;
+    background-color: white;
+    width: 100%;
+    float: left;
+}
+
+.rectanglePhoto 
+{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: calc((100% - 30px) / 3);
+    float: left;
+    background-color: #0174ad;
+}
+
+.rectanglePhoto::before 
+{
+    content: "";
+    display: block;
+    float: left;
+    padding-top: 100%;
+}
+
+.newCover
+{
+    width: 100%;
+    background-color: white;
+}
+
+.miniPhoto 
+{
+    margin-left: 1%;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+    height: 50px;
+    width: 50px;
+    background-color: #0174ad;
+    float: left;
+}
+
+.coverChanged 
+{
+    margin-top: 25px;
+    background-color: #0174ad;
+    height: 20vh;
+    width: 98%;
+    margin-left: 1%;
+}
+
+.text 
+{
+    float: left;
+    background-color: white;
+}
+
+.Lorem 
+{
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: white;
+    text-align: justify;
+    text-indent: none;
+}
+
+.event 
+{
+    background-color: white;
+}
+
+.eventBox 
+{
+    align-items: center;
+    margin: 30px 10px 10px 10px;
+    width: calc(100% - 20px);
+    height: 300px;
+    background-color: #0174ad;
+}
+
+p, b 
+{
+    background-color: white;
+}
+
+.eventText
+{
+    border: rgb(138, 138, 138) solid 1px;
+    margin-left: 5%;
+    padding-left: 2%;
+    width: 88%;
+    float: left;
+    background-color: white;
+}
+
+.eventButton 
+{
+    float: right;
+}
+
+.likeShare 
+{
+    border-top: 1px gray solid;
+    padding: 0px;
+    width: 100%;
+}
