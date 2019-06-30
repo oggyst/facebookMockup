@@ -354,6 +354,7 @@ p, b
 .eventButton 
 {
     float: right;
+    background-color: white;
 }
 
 .likeShare 
