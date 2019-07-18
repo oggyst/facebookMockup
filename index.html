@@ -2,141 +2,224 @@
 <html lang="en">
 
 <head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Facebook mockup </title>
     <script src="https://kit.fontawesome.com/3d110c4fdd.js"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-
-    <header class="header">
-        <i class="fab fa-facebook-square"></i>
-        <input class="input" type="text" placeholder=" Your page name   ">
-        <button type="button" class = "searchButton"> <i class="fas fa-search"></i></button>
-        <i class="fab fa-accusoft iconsHeader"></i>
-        <p>zsolitihasz</p>
-        <div class="headerLine"></div>
-        <i class="fas fa-user-friends iconsHeader"></i>
-        <i class="fas fa-inbox iconsHeader"></i>
-        <i class="fas fa-globe-europe iconsHeader"></i>
-        <div class="linija"></div>
-        <i class="fas fa-lock iconsHeader"></i>
-        <i class="fas fa-sort-down iconsHeader"></i>
-    </header>
-    <div class="container">
-
-        <div class="cover">
-            <div class="profilePhoto"></div>
-        </div>
-        <table class="ChosseBar">
-            <tr class="trStyle">
-                <td class="timeline  Chosse">Timeline</td>
-                <td class="about  Chosse">About</td>
-                <td class="welcome  Chosse">Welcome</td>
-                <td class="more  Chosse">More<i class="fas fa-sort-down arrowDown"></i></td>
-            </tr>
-        </table>
-        <div class="left">
-            <table class="aboutPage ">
-                <tr>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="Lorem"><b>About your page name</b><br> <span class="blueText">Lorem ipsum dolor sit
-                            amet, consectetur adipiscing elit, sed
-                            do eiusmod</span></td>
-                </tr>
-                <tr>
-                    <td><i class="fas fa-globe-americas"></i> &nbsp;<span class="blueText">Your website </span></td>
-                </tr>
-            </table>
-
-            <table class="info">
-                <tr>
-                    <td>ABOUT</td>
-                </tr>
-                <tr>
-                    <td><i class="fas fa-map-marker-alt"></i> Your adress<br>City, Country</td>
-                </tr>
-                <tr>
-                    <td><i class="fas fa-phone-alt"></i> <span class="blueText">Add phone number</span></td>
-                </tr>
-            </table>
-            <div class="border"></div>
-            <table class="apps">
-                <th class="headings">Apps</th>
-                <tr>
-                    <td>
-                        <div class="rectangle"></div>
-                        <p class="text-section">Welcome</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="rectangle"></div>
-                        <p class="text-section">FWB</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="rectangle"></div>
-                        <p class="text-section">Livestream</p>
-                    </td>
-                </tr>
-
-            </table>
-
-
-            <div class="border"></div>
-            <div class="photos">PHOTOS <br>
-
-                <div class="rectanglePhoto"></div>
-                <div class="rectanglePhoto"></div>
-                <div class="rectanglePhoto"></div>
-                <div class="rectanglePhoto"></div>
-                <div class="rectanglePhoto"></div>
-                <div class="rectanglePhoto"></div>
-                <div class="rectanglePhoto"></div>
-                <div class="rectanglePhoto"></div>
+    <div class="st-page-header">
+        <div class="st-header-icons-container">
+            <div class="st-facebook-logo resp"><i class="fab fa-facebook-f fa-fw resp"></i></div>
+            <div class="st-search-box resp">
+                <input type="search" class="st-search-input resp" placeholder="&nbsp;&nbsp;&nbsp;Your page name">
+                <span><i class="fas fa-search resp"></i></span>
+            </div>
+            <div class="st-profile resp">
+                <p class="st-page-name " >zsoltihasz</p>
+                <i class="fas fa-user-circle"></i>
+            </div>
+            <div class="st-home resp">
+                <p>Home</p>
+            </div>
+            <div class="st-notification-icons">
+                <i class="fas fa-globe-americas"></i>
+                <i class="fas fa-comments"></i>
+                <i class="fas fa-user-friends"></i>
+            </div>
+            <div class="st-support resp">
+                <i class="fas fa-user-lock resp"></i>
+                <i class="fas fa-caret-down resp"></i>
             </div>
         </div>
-        <div class="right">
-            <div class="newCover">
-                <div class="miniPhoto"></div><b><span class="blueText"><br>Your page name </span></b> changed their
-                cover photo
-                </br>3 minutes ago
-                <div class="coverChanged"></div> <br>
-                <p class="likeShare"> <span class="blueText">&nbsp;&nbsp; Like &#183; Comment &#183; Share</span></p>
-            </div>
-            <div class="border"></div>
-            <div class="text">
-                <div class="miniPhoto"></div>
-                <p><b><span class="blueText"> Your page name </span></b><br>December 12,2013</p>
-                <p class="Lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim venia</p>
-                <p class="likeShare"> <span class="blueText">&nbsp;&nbsp; Like &#183; Comment &#183; Share</span><br>
-                </p>
-
-                <div class="border"></div>
-            </div>
-
-            <div class="border"></div>
-            <div class="event">
-                <div class="miniPhoto"></div>
-                <p><b><span class="blueText"> Your page name </span> </b>created an event. <br>september 3, 3013</p>
-                <div class="eventBox">
+    </div>
+    <div class="st-cover-wrapper">
+        <div class="st-cover-photo"></div>
+        <div class="st-stats">
+            <table class="st-notifications">
+               <tr><th class="st-gray">THIS WEEK</th></tr>
+               <tr><th class="st-gray">UNREAD</th></tr>
+                <tr class="st-notification-type"><td><p class="number">0<br></p><span class="st-blue-text">Notifications</span></td></tr>
+                <tr class="st-notification-type"><td><p class="number">0<br></p><span class="st-blue-text">Messages</span></td></tr>
+            </table>
+            <div class="st-recent"></div><p class = "recent">&nbsp;Recent</p>
+            <div class="st-year"></div><p class = "year">&nbsp;2012</p>
+        <br>
+        <div class="st-like-page">
+            <p class="st-page-name">I Love <br> MacTelephone</p>
+            <div class="st-page-photo"></div>
+            <p class="st-info"><span class="st-blue-text"><i class="far fa-thumbs-up"></i> Like </span>&bull; <span class="opacity">Lakatos <br>
+            Tibor likes this.</span></p>
+        </div>
+    </div> 
+        <div class="st-profile-photo">
+                <div class="st-page-info">
+                        <span class="st-page-name">Your page name</span>
+                        <span class="st-page-web">Website</span>
+                    </div>
+        </div>
+        <div class="st-like"><i class="far fa-thumbs-up"></i> Like</div>
+        <div class="st-follow-msg">
+            <table>
+                <th class="follow">+ Follow</th>
+                <th class="Message"><i class="fas fa-comment-alt"></i> Message</th>
+                <th class="more"><i class="fas fa-ellipsis-h"></i></th>
+            </table>
+        </div>
+        <div class="st-navigation-bar">
+            <ul>
+                <li class="timeline nav">Timeline</li>
+                <li class="rest nav">About</li>
+                <li class="rest nav">Welcome</li>
+                <li class="rest nav">FWB</li>
+                <li class="more nav">More
+                    <i class="fas fa-caret-down"></i></li>
+            </ul>
+        </div>
+        <select class = "st-low-resolution-drop-menu">
+                <option>Timeline</option>
+                <option>About</option>
+                <option>Welcome</option>
+                <option>FWB</option>
+                <option>More</option>
+            </select>
+    </div>
+    <div class="st-main-content">
+        <div class="st-left-container">
+            <table class="st-about-website">
+                <tr>
+                    <td class="empty">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="about">
+                        <p class="about">About Your page name</p>
+                        <p class="lorem">Lorem ipsum dolor sit amet timeti ergo sum Lorem ipsum dolor sit amet timeti
+                            dolor sit amet timeti</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="website">
+                        <p><i class="fas fa-globe"></i> &nbsp;your website</p>
+                    </td>
+                </tr>
+            </table>
+            <table class="about">
+                <tr>
+                    <td class="about">
+                        <p>ABOUT <i class="fas fa-angle-right"></i></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="adress">
+                        <p class="st-icon-text"><i class="fas fa-map-marker-alt"></i><span class="st-adress">Your
+                                Adress</span></p>
+                        <p class="st-city">City, Country</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="st-phone-number">
+                        <p><i class="fas fa-phone-alt"></i>Add phone number</p>
+                    </td>
+                </tr>
+            </table>
+            <table class="st-apps">
+                <th class="st-heading">APPS</th>
+                <tr>
+                    <td>
+                        <div class="st-rectangle">
+                            <p class="st-text-section">Welcome</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="st-rectangle">
+                            <p class="st-text-section">FWB</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="st-rectangle">
+                            <p class="st-text-section">Livestream</p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <div class="st-photos">
+                <p>PHOTOS <i class="fas fa-angle-right"></i></p>
+                <div class="st-photo-container">
+                    <div class="st-thumbnail"></div>
+                    <div class="st-thumbnail"></div>
+                    <div class="st-thumbnail"></div>
+                    <div class="st-thumbnail"></div>
+                    <div class="st-thumbnail"></div>
+                    <div class="st-thumbnail"></div>
+                    <div class="st-thumbnail"></div>
+                    <div class="st-thumbnail"></div>
+                    <div class="st-thumbnail"></div>
                 </div>
-                <div class="eventText">
-
-                    <p><b>Event name</b><br>Tuesday, September 3,2013 at 6:00pm
-
-                        <button class="eventButton" type="button"><i class="fas fa-calendar-alt"></i> Join</button>
-                        <br>Adress City,Country 1051</p>
-                    <p class="likeShare"><span class="blueText"> &#183; Comment &#183; Get Notifications
-                            &#183;Share</span></p>
-
+            </div>
+            <div class="st-bottom-text-holder">
+                <p class="st-links">English (US) &bull;
+                    Privacy &bull;
+                    Terms &bull;
+                    Cookies &bull;
+                    More <i class="fas fa-caret-down"></i></p>
+                <p class="st-copyrights">Facebook © 2014</p>
+            </div>
+        </div>
+        <div class="st-right-container">
+            <div class="st-new-cover-photo">
+                <div class="st-mini-profile-icon"></div>
+                <p class="st-profile-text"><span class="st-page-name">Your page name</span>
+                    changed their <span class="st-blue-text">cover photo.</span><br>
+                    <span class="st-time">3 minutes ago <i class="fas fa-globe-americas"></i></span><br></p>
+                <div class="cover-photo"></div>
+                <div class="st-like-share">
+                    <span class="st-blue-text opacity">Like &bull; Comment &bull; Share</span>
+                </div>
+            </div>
+            <div class="st-status">
+                <div class="st-mini-profile-icon"></div>
+                <p class="st-profile-text"><span class="st-page-name">Your page name</span><br>
+                    <span class="st-time">December 12, 2013 <i class="fas fa-globe-americas"></i></span><br></p>
+                <p class="st-status-text">Lorem ipsum dolor sit amet timeti ergo sum Lorem ipsum dolor sit amet timeti
+                    dolor
+                    sit amet timeti imeti ergo sum imeti ergo sum</p>
+                <div class="st-like-share">
+                    <span class="st-blue-text opacity">Like &bull; Comment &bull; Share</span>
+                </div>
+            </div>
+            <div class="st-event">
+                <div class="st-mini-profile-icon"></div>
+                <p class="st-profile-text"><span class="st-page-name">Your page name</span> created an event.<br>
+                    <span class="st-time">september 3, 3013 <i class="fas fa-globe-americas"></i></span><br></p>
+                <div class="st-new-event"></div>
+                <div class="st-event-info">
+                    <span class="st-page-name">Event name</span><br>
+                    <span class="st-time">Tuesday, September 3, 2013 at 6:00pm<br>
+                        Adress, City, Country, 1051</span>
+                    <button class="eventButton" type="button"><i class="fas fa-calendar-alt"></i> Join</button>
+                </div>
+                <div class="st-like-share">
+                    <span class="st-blue-text opacity">Like &bull; Comment &bull; Get Notifications &bull; Share</span>
+                </div>
+            </div>
+            <div class="st-status">
+                <div class="st-mini-profile-icon"></div>
+                <p class="st-profile-text"><span class="st-page-name">Your page name</span><br>
+                    <span class="st-time">December 12, 2013 <i class="fas fa-globe-americas"></i></span><br></p>
+                <p class="st-status-text">Lorem ipsum dolor sit amet timeti ergo sum Lorem ipsum dolor sit amet timeti
+                    dolor
+                    sit amet timeti imeti ergo sum imeti ergo sum</p>
+                <div class="st-like-share">
+                    <span class="st-blue-text opacity">Like &bull; Comment &bull; Share</span>
                 </div>
             </div>
         </div>
+        <div class="st-fix-right-margin"></div>
     </div>
 </body>
