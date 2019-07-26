@@ -13,7 +13,6 @@ body {
     background-color:#dfe3ee;
     width:100vw;
 }
-
 div.st-page-header {
     height: 45px;
     width: 100%;
@@ -28,15 +27,15 @@ div.st-page-header div.st-header-icons-container
     display:flex;
     min-width: 665px;
 }
-div.st-page-header div.st-header-icons-container div.st-facebook-logo {
+div.st-page-header div.st-header-icons-container div.st-facebook-logo 
+{
     margin: 9px 0px;
     float:left;
     display:block;
 }
 
 div.st-page-header div.st-header-icons-container div.st-facebook-logo .fa-facebook-f
-{
-    
+{  
     border-radius: 5px;
     height: 20px;
     width: 25px;
@@ -62,7 +61,6 @@ div.st-page-header div.st-header-icons-container div.st-search-box
     width:1000px;
     max-width: 40%;
 }
-
 div.st-page-header div.st-header-icons-container div.st-search-box .st-search-input
 {
     height: 27px;
@@ -163,9 +161,7 @@ div.st-page-header div.st-header-icons-container div.st-support .fas
 {
         margin:calc((45px - var(--header-font-size)) / 2) 5px;
         font-size: var(--header-font-size);
-        
 }
-
 div.st-page-header div.st-header-icons-container div.st-support .fa-user-lock
 {
     border-left: 1px solid rgba(0, 0, 0, 0.1);
@@ -176,8 +172,6 @@ div.st-page-header div.st-header-icons-container div.st-support .fa-caret-down
 {
     color:rgba(0, 0, 0, 0.4);
 }
-
-
 div.st-cover-wrapper
 {
     width: 72%;
@@ -191,8 +185,7 @@ div.st-cover-wrapper div.st-cover-photo
     width:84%;
     background-color:var(--main-element-color);
     float:left;
-    min-width:940px;
-        
+    min-width:940px;       
 }
 div.st-cover-wrapper div.st-stats
 {
@@ -202,7 +195,6 @@ div.st-cover-wrapper div.st-stats
     float:left;
     display:block;
     position: relative;
-  
 } 
 div.st-cover-wrapper div.st-stats table 
 {
@@ -245,8 +237,6 @@ div.st-cover-wrapper div.st-stats p.recent
     padding:15px;
     opacity:0.5;
     font-weight: 700;
-    
-    
 }
 div.st-cover-wrapper div.st-stats div.st-year
 {
@@ -265,7 +255,6 @@ div.st-cover-wrapper div.st-stats div.st-like-page
 {
     float:left;
     display:block;
-
 }
 div.st-cover-wrapper div.st-stats div.st-like-page p.st-page-name
 {
@@ -391,6 +380,7 @@ div.st-cover-wrapper div.st-navigation-bar ul
     padding: 5px;
     left:280px;
     min-width: 640px;
+    max-width:886px;
 }
 div.st-cover-wrapper div.st-navigation-bar li.nav
 {
@@ -404,12 +394,16 @@ div.st-cover-wrapper div.st-navigation-bar li.timeline
     border-bottom: 4px var(--main-element-color) solid;
     line-height: 53px;
     font-weight: 700;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 div.st-cover-wrapper div.st-navigation-bar li.rest
 {
     border-right: 1px rgb(161, 159, 159) solid;
     line-height: 53px;
     font-weight: 400;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 div.st-main-content
 {
@@ -679,7 +673,6 @@ div.st-main-content div.st-right-container div.st-event
     margin-top:15px;
     border-radius:5px;
 }
-
 div.st-main-content div.st-right-container div.st-event div.st-new-event
 {
     margin:100px 10px 0px 10px;
@@ -699,9 +692,7 @@ div.st-main-content div.st-right-container div.st-event div.st-event-info
     padding:20px;
     margin:0px 10px 10px 10px;
     border:1px solid var(--border-color);
-    
 }
-
 div.st-main-content div.st-right-container div.st-event button
 {
     float:right;
@@ -718,8 +709,6 @@ div.st-main-content div.st-fix-right-margin
     background-color: red;
     float:left;
 }
-
-
 @media only screen and (min-width: 2187px){
     
     div.st-cover-wrapper div.st-follow-msg
@@ -727,9 +716,7 @@ div.st-main-content div.st-fix-right-margin
         bottom:3px;
     }
 }
-
 @media only screen and (max-width: 1385px) {
-    
     div.st-cover-wrapper div.st-stats
     {
         display:none;
@@ -740,10 +727,6 @@ div.st-main-content div.st-fix-right-margin
     }
 }
 @media only screen and (max-width: 1175px){
-    body    
-    {       
-        width:calc(100% - 10px);
-    }
     div.st-cover-wrapper
     {
         margin:15px 0px;
@@ -752,7 +735,6 @@ div.st-main-content div.st-fix-right-margin
         padding:none;
         width: 100%;
     }
-  
     div.st-cover-wrapper div.st-cover-photo
     {
         width:100%;
