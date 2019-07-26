@@ -1,8 +1,8 @@
 :root {
     --main-element-color: #3b5998;
-    --header-background: #dfe3ee;
+    --header-background: #f5f6f7;
     --header-font-size: 16px;
-    --border-color: #f7f7f7;
+    --border-color: #dddfe2;
 }
 * {
     font-family: Helvetica, Arial, sans-serif;
@@ -122,7 +122,7 @@ div.st-page-header div.st-header-icons-container div.st-home
 }
 div.st-page-header div.st-header-icons-container div.st-home p
 {
-    border-left: 1px black solid;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
     padding-left:10px;
     font-size: var(--header-font-size);
     text-align: center;
@@ -135,7 +135,7 @@ div.st-page-header div.st-header-icons-container div.st-notification-icons
 div.st-page-header div.st-header-icons-container div.st-notification-icons .fa-user-friends
 {
     float:right;
-    color:black;
+    color:rgba(0, 0, 0, 0.4);
     font-size: var(--header-font-size);
     margin:calc((45px - var(--header-font-size)) / 2) 5px;
 }
@@ -144,6 +144,7 @@ div.st-page-header div.st-header-icons-container div.st-notification-icons .fa-c
     float:right;
     margin:calc((45px - var(--header-font-size)) / 2) 5px;
     font-size: var(--header-font-size);
+    color:rgba(0, 0, 0, 0.4);
 
 }
 div.st-page-header div.st-header-icons-container div.st-notification-icons .fa-globe-americas
@@ -151,6 +152,7 @@ div.st-page-header div.st-header-icons-container div.st-notification-icons .fa-g
     float:right;
     margin:calc((45px - var(--header-font-size)) / 2) 5px;
     font-size: var(--header-font-size);
+    color:rgba(0, 0, 0, 0.4);
 }
 div.st-page-header div.st-header-icons-container div.st-support 
 {
@@ -166,10 +168,14 @@ div.st-page-header div.st-header-icons-container div.st-support .fas
 
 div.st-page-header div.st-header-icons-container div.st-support .fa-user-lock
 {
-    border-left: 1px black solid;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
     padding-left:10px;
+    color:rgba(0, 0, 0, 0.4);
 } 
-
+div.st-page-header div.st-header-icons-container div.st-support .fa-caret-down
+{
+    color:rgba(0, 0, 0, 0.4);
+}
 
 
 div.st-cover-wrapper
@@ -206,23 +212,24 @@ div.st-cover-wrapper div.st-stats table tr th.st-gray
 {
     float:left;
     width:150px;    
-    padding:5px;
-    border:1px solid gray;
+    padding:15px;
+    border:1px solid var(--border-color);
     text-align:center;
+    background-color:var(--header-background);
 }
 div.st-cover-wrapper div.st-stats table tr.st-notification-type td
 {
-    border:1px solid gray;
+    border:1px solid var(--border-color);
     width:150px;  
-    padding:5px;
-    line-height: 20px;
+    padding:15px;
+    line-height: 15px;
     text-align:center;
     background-color:white;
 }
-
-div.st-cover-wrapper div.st-stats table tr.st-notification-type p.number
+div.st-cover-wrapper div.st-stats table tr.st-notification-type td p.number
 {
     font-weight:700;
+    margin:0px;
 }
 div.st-cover-wrapper div.st-stats div.st-recent
 {
@@ -230,7 +237,7 @@ div.st-cover-wrapper div.st-stats div.st-recent
     height:50px;
     width:8px;
     font-size:30px;
-    background-color: dimgray;
+    background-color:gray;
     float:left;
 }
 div.st-cover-wrapper div.st-stats p.recent
@@ -246,7 +253,7 @@ div.st-cover-wrapper div.st-stats div.st-year
     height:50px;
     width:8px;
     font-size:30px;
-    background-color: rgb(221, 221, 221);
+    background-color: #c0bebe;
     float:left;
 }
 div.st-cover-wrapper div.st-stats p.year
@@ -262,7 +269,7 @@ div.st-cover-wrapper div.st-stats div.st-like-page
 }
 div.st-cover-wrapper div.st-stats div.st-like-page p.st-page-name
 {
-    color:blue;
+    color:var(--main-element-color);
     font-weight:700;
     text-align: left;
 }
@@ -282,7 +289,7 @@ div.st-cover-wrapper div.st-profile-photo
     position: relative;
     top:220px;
     left:30px;
-    border:1px black solid;
+    border:1px  solid black;
 }
 div.st-cover-wrapper div.st-page-info
 {
@@ -336,17 +343,23 @@ div.st-cover-wrapper div.st-follow-msg
     background-color:white;
     border-radius: 5px;
     text-align:center;
-    line-height:40px;
+}
+div.st-cover-wrapper div.st-follow-msg table
+{
+    height:30px;
 }
 div.st-cover-wrapper div.st-follow-msg table th
 {
     width:100px;
-    border-left:1px gray solid;
-    padding:0px;
+    border-left:1px var(--border-color) solid;
+    line-height: 30px;
+    padding-top:5px;
+    text-align:center;
+
 }
 div.st-cover-wrapper div.st-follow-msg table th.follow
 {
-    color:gray;
+    color:var(--border-color);
     border:none;
 }
 div.st-cover-wrapper div.st-follow-msg table th.more
@@ -357,7 +370,8 @@ div.st-cover-wrapper div.st-follow-msg table th.more
 div.st-cover-wrapper div.st-navigation-bar
 {
     width:calc(84% - 2px);
-    border:1px solid black;
+    border:1px solid var(--border-color);
+    border-radius: 5px;
     height:60px;
     position: relative;
     top:183px;
@@ -381,18 +395,21 @@ div.st-cover-wrapper div.st-navigation-bar ul
 div.st-cover-wrapper div.st-navigation-bar li.nav
 {
     float: left;
-    font-size:30px;
+    font-size:22px;
     padding: 0px 15px;
     line-height: 55px;
 }
 div.st-cover-wrapper div.st-navigation-bar li.timeline
 {
-    border-bottom: 4px blue solid;
+    border-bottom: 4px var(--main-element-color) solid;
     line-height: 53px;
+    font-weight: 700;
 }
 div.st-cover-wrapper div.st-navigation-bar li.rest
 {
     border-right: 1px rgb(161, 159, 159) solid;
+    line-height: 53px;
+    font-weight: 400;
 }
 div.st-main-content
 {
@@ -407,19 +424,18 @@ div.st-main-content div.st-left-container
     margin-right:10px;
     float:left;
     display:block;
-    
-    border-radius: 5px;
 }
 div.st-main-content div.st-left-container table.st-about-website 
 {
     border-collapse: collapse;
     background-color:white;
+    border-radius: 5px;
     width:100%;
 }
 div.st-main-content div.st-left-container table.st-about-website  td
 {
     line-height: 20px;
-    border:1px solid gray;
+    border:1px solid var(--border-color);
 }
 div.st-main-content div.st-left-container table.st-about-website  td.empty
 {
@@ -428,13 +444,13 @@ div.st-main-content div.st-left-container table.st-about-website  td.empty
 div.st-main-content div.st-left-container table.st-about-website  tr td p.about
 {
     font-weight: 700;
-    margin:0px;
+    margin:10px 0px 5px;
     padding:0 10px;
 }
 div.st-main-content div.st-left-container table.st-about-website  tr td p.lorem
 {
-    color:blue;
-    margin:0px;
+    color:var(--main-element-color);
+    margin:5px 0px 10px;
     padding:0 10px;
 }
 div.st-main-content div.st-left-container table.st-about-website  tr td.website i
@@ -444,7 +460,7 @@ div.st-main-content div.st-left-container table.st-about-website  tr td.website 
 }
 div.st-main-content div.st-left-container table.st-about-website  tr td.website p
 {
-    color:blue;
+    color:var(--main-element-color);
     font-weight: 600;
     padding:5px 10px;
     margin:5px 0px;
@@ -452,14 +468,17 @@ div.st-main-content div.st-left-container table.st-about-website  tr td.website 
 div.st-main-content div.st-left-container table.about
 {
     margin-top:10px;
-    border:1px solid gray;
+    border: 1px solid var(--border-color);
     width:100%;
     background-color: white;
+    border-radius: 5px;
+    border-collapse: collapse;
 }
 div.st-main-content div.st-left-container table.about td.about
 {
     background-color:var(--header-background);
-    border-bottom:1px solid gray;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
     margin:0px;
     font-weight: 700;
     padding:0 10px;
@@ -469,12 +488,15 @@ div.st-main-content div.st-left-container table.about td.about i
 {
     float:right;
     padding-right:10px;
-    color:gray;
+    color:var(--border-color);
+}
+div.st-main-content div.st-left-container table.about td.adress
+{
+    padding:10px;
 }
 div.st-main-content div.st-left-container table.about td.adress p.st-icon-text
 {
     opacity:0.5;
-    padding-left:10px;
     margin:0px;
     margin-top:10px;
 }
@@ -485,16 +507,16 @@ div.st-main-content div.st-left-container table.about td.adress span.st-adress
 }
 div.st-main-content div.st-left-container table.about td.adress .st-city
 {
-    margin:0px 12px;  
-    padding:0px 20px 5px 20px;
+    margin:0px;  
+    padding:0px 22px 10px 22px;
     font-weight:400;
     margin-top:0px;
-    border-bottom:1px solid gray;
+    border-bottom:1px solid var(--border-color);
     opacity:0.5;
 }
 div.st-main-content div.st-left-container table.about td.st-phone-number
 {
-    padding-left:10px;
+    padding:10px;
 }
 div.st-main-content div.st-left-container table.about td.st-phone-number i
 {
@@ -505,21 +527,25 @@ div.st-main-content div.st-left-container table.about td.st-phone-number i
 div.st-main-content div.st-left-container table.about td.st-phone-number p
 {
     margin:5px 0px;
-    color:blue;
+    color:var(--main-element-color);
 }
 div.st-main-content div.st-left-container table.st-apps
 {
     margin-top:10px;
-    border: 1px solid gray;
     width:100%;
 }
 div.st-main-content div.st-left-container table.st-apps th.st-heading
 {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border:1px solid var(--border-color);
     text-align: left;
-    line-height: 30px;
-    padding:5px 10px;
-    opacity: 0.5;
     background-color:var(--header-background);
+}
+div.st-main-content div.st-left-container table.st-apps th.st-heading p
+{
+    opacity: 0.5;
+    padding:0px 10px;
 }
 div.st-main-content div.st-left-container table.st-apps td
 {
@@ -534,16 +560,24 @@ div.st-main-content div.st-left-container table.st-apps td div.st-rectangle
     padding: 10px;
     margin:10px 0px;
 }
-
+div.st-main-content div.st-left-container table.st-apps td.st-bottom
+{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border:1px solid var(--border-color);
+}
 div.st-main-content div.st-left-container table.st-apps td div.st-rectangle p
 {
     padding:29px 170px;
+    font-weight:700;
 }
 div.st-main-content div.st-left-container div.st-photos
 {
-    border: 1px solid gray;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
     margin-top:15px;
     border-collapse: collapse;
+    background-color:var(--header-background);
 }
 div.st-main-content div.st-left-container div.st-photos p
 {
@@ -558,24 +592,23 @@ div.st-main-content div.st-left-container div.st-photos p i
 }
 div.st-main-content div.st-left-container div.st-photos div.st-photo-container
 {
-    border-top: 1px solid gray;
+    border-top: 1px solid var(--border-color);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     background-color:white;
     overflow:hidden;
     border-collapse: collapse;
     display:grid;
-    grid-gap: 10px;
-    padding:10px;
+    grid-gap: 5px;
+    column-gap: 5px;
+    padding:5px;
     grid-template-columns: auto auto auto;
     grid-template-rows: max-content;
 }
 
 div.st-main-content div.st-left-container div.st-photos div.st-photo-container div.st-thumbnail
 {
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    width: calc(100% - 5px);
+    width: 100%;
     float: left;
     background-color: var(--main-element-color);
 }
@@ -591,8 +624,10 @@ div.st-main-content div.st-left-container div.st-photos div.st-photo-container d
 }
 div.st-main-content div.st-left-container div.st-bottom-text-holder p.st-links
 {
-    opacity: 0.5;
-    color:gray;
+    opacity: 0.3;
+    color:var(--border-color);
+    display:block;
+    color:black;
 }
 div.st-main-content div.st-left-container div.st-bottom-text-holder p.st-copyrights
 {
@@ -609,12 +644,12 @@ div.st-main-content div.st-right-container div.st-new-cover-photo
 {
     background-color: white;
     overflow:hidden;
-
+    border-radius: 5px;
 }
 div.st-main-content div.st-right-container div.st-new-cover-photo div.cover-photo
 {
-    margin:100px 10px 10px 10px;
-    width:calc(100% - 20px);
+    margin:100px 5px 5px 5px;
+    width:calc(100% - 10px);
     position:relative;
     display:block;
     background-color: var(--main-element-color);
@@ -630,6 +665,7 @@ div.st-main-content div.st-right-container div.st-status
     background-color:white;
     margin-top:10px;
     overflow:hidden;
+    border-radius:5px;
 }
 div.st-main-content div.st-right-container div.st-status p.st-status-text
 {
@@ -641,6 +677,7 @@ div.st-main-content div.st-right-container div.st-event
     overflow:hidden;
     background-color:white;
     margin-top:15px;
+    border-radius:5px;
 }
 
 div.st-main-content div.st-right-container div.st-event div.st-new-event
@@ -661,7 +698,7 @@ div.st-main-content div.st-right-container div.st-event div.st-event-info
 {
     padding:20px;
     margin:0px 10px 10px 10px;
-    border:1px solid gray;
+    border:1px solid var(--border-color);
     
 }
 
@@ -803,12 +840,12 @@ span.st-time
 }
 span.st-page-name
 {
-    color:blue;
+    color:var(--main-element-color);
     font-weight: 600;
 }
 span.st-blue-text
 {
-    color:blue;
+    color:var(--main-element-color);
 }
 span.opacity 
 {
@@ -828,11 +865,11 @@ div.st-mini-profile-icon
 div.st-like-share
 {
     background-color:var(--header-background);
-    width:calc(100% - 12px);
-    border: 1px solid gray;
+    width:100%;
+    border: 1px solid var(--border-color);
     padding-left:10px;
     line-height: 30px;
-    padding:none;
     float:left;
-    margin:none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius:5px;
 }
